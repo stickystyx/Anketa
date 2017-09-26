@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style.less">
+	<title>Document</title>
+</head>
+<body>
+	<div class="wrapper">
+		<!-- В header поместил логотип "Секретно заполнено собственноручно" заголовок первого порядка "Дело" и форму с информацией обо мне  -->
+	<header>
+		<div class="logotype">
+			<div class="logo">
+				<h2>секретно</h2>
+				<p >заполнено собственноручно</p>
+			</div>
+
+		</div>
+		<div class="main_content">
+		<h1>Дело</h1>
+		</div>
+	</header>
+	<!-- Закончили header -->
+	<!-- Форма заполнение информации "обо мне" -->
+	<section class="about_me">
+	<div class="name">
+		<h4>Полное ФИО</h4>
+		<h2>Домарев Алексей Сергеевич</h2>
+	</div>
+	<div class="year">
+		<h4>Год рождения</h4>
+		<h2>1986</h2>
+	</div>
+	<div class="city">
+		<h4>Место жительства</h4>
+		<h2>г. Владивосток , Россия</h2>
+	</div>
+		<div class="skype">
+		<h4>Скайп</h4>
+		<h2>отсутствует</h2>
+	</div>
+	<div class="mail">
+		<h4>Почта</h4>
+		<h2>alekseydoamrev@gmail.com</h2>
+		</div>
+</section>
+	<!-- Закончили заполнение формы -->
+
+
+	<!--	Обо мне чекбоксами-->
+
+		 <div class="checkbox_form">
+		 	<h3>Расскажите о себе чекбоксами</h3> <br>
+			<p>Отметьте чекбоксами пункты, которые соответствуют вашим скиллам. Кстати, отсутствие опыта не означает, что у вас меньше шансов стать одним из наших товарищей. Это означает, что вы будете получать те задачи, с которыми гарантировано будете справляться.</p>
+
+
+		<form class="form">
+			<label><input class="checkbox" type="checkbox" name="select1" value="s1">
+			<span class="checkbox-custom"></span>
+			<span class="label">бэм/oocss</span>
+			</label><br>
+			<label><input class="checkbox" type="checkbox" name="select1" value="s1">
+			<span class="checkbox-custom"></span>
+			<span class="label">Pug/(Jade)</span>
+			</label><br>
+			<label><input class="checkbox" type="checkbox" name="select1" value="s1">
+			<span class="checkbox-custom"></span>
+			<span class="label">Stylus/LESS/SASS</span>
+			</label><br>
+			<label><input class="checkbox" type="checkbox" name="select1" value="s1">
+			<span class="checkbox-custom"></span>
+			<span class="label">работаю с SVG</span>
+			</label><br>
+			<label><input class="checkbox" type="checkbox" name="select1" value="s1">
+			<span class="checkbox-custom"></span>
+			<span class="label">Верстаю семантично</span>
+			</label><br>
+			<label><input class="checkbox" type="checkbox" name="select1" value="s1">
+			<span class="checkbox-custom"></span>
+			<span class="label">Accessibility(A11Y)</span>
+			</label><br>
+			<label><input class="checkbox" type="checkbox" name="select1" value="s1">
+			<span class="checkbox-custom"></span>
+			<span class="label">ES2015/ES2016</span>
+			</label><br>
+			<label><input class="checkbox" type="checkbox" name="select1" value="s1">
+			<span class="checkbox-custom"></span>
+			<span class="label">Gulp/GRUNT</span>
+			</label><br>
+			<label><input class="checkbox" type="checkbox" name="select1" value="s1">
+			<span class="checkbox-custom"></span>
+			<span class="label">Webpack</span>
+			</label><br>
+			<label><input class="checkbox" type="checkbox" name="select1" value="s1">
+			<span class="checkbox-custom"></span>
+			<span class="label">Дружу с WebGL</span>
+			</label><br>
+			<label><input class="checkbox" type="checkbox" name="select1" value="s1">
+			<span class="checkbox-custom"></span>
+			<span class="label">jQuery</span>
+			</label><br>
+			<label><input class="checkbox" type="checkbox" name="select1" value="s1">
+			<span class="checkbox-custom"></span>
+			<span class="label">Знаю/изучаю Angular</span>
+			</label><br>
+			<label><input class="checkbox" type="checkbox" name="select1" value="s1">
+			<span class="checkbox-custom"></span>
+			<span class="label">Знаю/изучаю React</span>
+			</label><br>
+			<label><input class="checkbox" type="checkbox" name="select1" value="s1">
+			<span class="checkbox-custom"></span>
+			<span class="label">Знаю/изучаю Node.js</span>
+			</label><br>
+			<label><input class="checkbox" type="checkbox" name="select1" value="s1">
+			<span class="checkbox-custom"></span>
+			<span class="label">Использую Git</span>
+			</label><br>
+			<label><input class="checkbox" type="checkbox" name="select1" value="s1">
+			<span class="checkbox-custom"></span>
+			<span class="label">С глазомером всё ок</span>
+			</label><br>
+			<label><input class="checkbox" type="checkbox" name="select1" value="s1">
+			<span class="checkbox-custom"></span>
+			<span class="label">Я ленивый(-ая)</span>
+			</label><br>
+			<label>У меня хороший английский</label>
+
+	      </form>
+
+
+				<section>
+					<h2 class="js-cont">Уровень владения JavaScript</h2>
+
+			   <div class="js-level">
+			  	 <input type="range" value="0" max="770" step="192.5">
+			   	 <div class="js-item">
+			   		 <span class="dont-know">Не владею</span>
+			     <span class="use_ready-code"> Использую готовые решения</span>
+			     <span class="can_use-code">Использую готовые решения и умею их переделывать</span>
+			     <span class="super">Пишу сложный JS с нуля</span>
+			   </div>
+			   </div>
+			 	</section>
+<!-- Блок "о себе словами" выполнен при помощи тега textarea -->
+
+<section class="story">
+    <form action="">
+   <h3>Расскажите о себе словами</h3><br>
+   	<p>Напишите пару предложений,чем вас привлекла наша вакансия и чего вы ожидаете от работы в CSSSR.Кстати,будет здорово,если при нехватке места для текста строки будут добавляться автоматически</p>
+   <p><textarea name="comment">Спасибо,Вам за представленную возможность попробовать свои силы и за предоставленный макет анкеты для верстки. Это для меня первый боевой опыт,прошу Вас,дать комментарии по выполненной работе, а так же просьба, указать на знания, которые я должен постичь,чтобы влиться в Ваш коллектив. Заранее благодарю.  </textarea></p>
+	  </form>
+</section>
+
+<!-- Планы на будущее -->
+<section>
+	<div class="my_future">
+	<h3>Какие у вас планы на будущее?</h3><br>
+	<p>Этот ответ ни на что не повлияет. Не беда,если в будущем ваши планы поменяются. </p>
+<div class="plan">
+	<div class="plan-itm">
+		<label><input class="radio" type="radio" checked>
+   <span class="radio-custom"></span>
+   <span class="label-radio">Верстать</span>
+   </label>
+	</div>
+  	<div class="plan-itm">
+  	<label><input class="radio" type="radio" checked>
+   <span class="radio-custom"></span>
+   <span class="label-radio">Прокачиваться в JS</span>
+   </label>
+</div>
+   	<div class="plan-itm">
+   	<label><input class="radio" type="radio" >
+   <span class="radio-custom"></span>
+   <span class="label-radio">Менеджерство</span>
+   </label>
+</div>
+   <div class="plan-itm">
+   <label><input class="radio" type="radio" >
+   <span class="radio-custom"></span>
+   <span class="label-radio">Другое</span>
+ </label> <br>
+</div>
+</div>
+
+   </div>
+
+</section>
+
+<!-- Конец контейнера -->
+
+
+<footer>
+	<form class="date" action="index.html" method="post">
+		 <label for="date">Дата заполнения <input type="date" name="date" value="2017-09-24">
+
+		</label>
+	</form>
+
+</footer>
+
+
+		 </div>
+
+
+</div>
+</body>
+</html>
