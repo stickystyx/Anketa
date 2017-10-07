@@ -1,0 +1,485 @@
+// Подключение шрифтов//
+@import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700');
+
+
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+body{
+	background: rgb(121,121,121);
+}
+.wrapper{
+	display: flex;
+	flex-wrap: wrap;
+	width: 1000px;
+	margin:auto;
+	background: url(../img/bg.jpg);
+
+&__inner{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	.header{
+		width: 100%;
+		margin:auto;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		justify-content: flex-end;
+		align-items: flex-end;
+		// логотип
+		&_logo{
+			display: flex; /*Элементы контейнера флексовые*/
+      flex-direction: column; /*Расположение элементов по горизонтали колонкой*/
+			justify-content: flex-end;
+    	margin-right: 52px; /*Отступ справа*/
+			margin:64px 88px -83px 0; /* Отступы для позиционирования логотипа*/
+  		height: 83px; /*Высота лого*/
+  		width: 247px; /*Ширина лого*/
+  		text-align: center; /* Выравнивание текста внутри лого по-середине*/
+  		padding:15px 25px 18px 20px; /*Внутренние отступы*/
+  		border:1px solid blue;/*Рамка*/
+  		transform: rotate(-3deg); /*Разворот логотипа */
+			&_title{
+				text-transform: uppercase; /*Заглавные буквы*/
+  			font-weight:bold; /*Шрифт - жирный*/
+  			font-size: 37px; /*размер шрифта*/
+  			color:rgb(82,96,141); /*Цвет шрифта*/
+  			margin:-5px 1px; /*Вненешние отступы*/
+  			padding:2px; /*Внутренние отступы*/
+  			font-family: 'Arial',sans-serif; /*Ввыбранный Шрифт*/
+			}
+			&_subtitle{
+				color:rgb(82,96,141); /*Цвет шрифта*/
+			 text-transform: uppercase; /*Заглавные буквы*/
+			 font-size: 10px;/*размер шрифта*/
+			 font-family: 'arial',sans-serif;/*Шрифт*/
+			 margin:6px 0 0 2px; /*Вненешние отступы*/
+			 font-weight:bold;/*Шрифт - жирный*/
+			 letter-spacing: 1px;/*расстояние между буквами*/
+			}
+		}
+		// ЗАголовок Дело
+			&_main{
+				margin: auto;
+				&__title{
+				color:#291C0D;
+        font-family: 'PT Sans Narrow', sans-serif;
+        font-size:120px;
+        text-transform:uppercase;
+        font-weight:bold;
+        margin-bottom: 64px;
+        text-shadow:-1px 9px 3px #2F1B15 ;
+				}
+			}
+	}
+	// Обо мне
+	.aboutMe{
+		width: 77%;
+
+		margin:auto;
+		display: flex;
+		flex-wrap: wrap;
+  	flex-direction: column;
+
+&_item{
+	display: flex;
+	flex-flow: wrap;
+
+
+	&__title{
+		width: 30%;
+		font-family: 'PT Sans', sans-serif;
+		font-weight:bold;
+		color:#2F1B15;
+		font-size: 23px;
+
+	}
+	&__subtitle{
+	width: 70%;
+	border-bottom: 1px solid;
+	font-family:'Courier new';
+	font-size:30px;
+	font-weight: 400;
+	position: relative;
+	top:-10px;
+	margin-bottom: 26px;
+}
+}
+}
+	// обо мне чекбсоксами
+	.aboutMe_checkbox{
+
+		width: 77%;
+		margin: auto;
+		display: flex;
+	  flex-direction: column;
+	  flex-wrap: wrap;
+
+		.checkboxItem{
+			display: flex;
+			flex-direction: column;
+			flex-wrap: wrap;
+			align-content: center;
+
+
+			&__title{
+			font-family: 'PT Sans', sans-serif;
+			font-weight: bold;
+			color:#2F1B15;
+			font-size:23px;
+      margin-bottom: -4px;
+			}
+			&__subtitle{
+			font-family: 'PT Sans', sans-serif;
+			color:#2F1B15;
+			font-size:15px;
+      margin-bottom: 35px;
+			}
+
+			 &__form{
+	//  width: 33%;
+
+	  align-content: space-between;
+	  display: flex;
+  	flex-flow:column wrap;
+		flex:0 1 calc(770px / 2.6);
+
+
+}
+
+}
+/*Стилизую чекбокс. Из кастомного в тот что на макете*/
+/* Скрываем реальный чекбокс */
+.checkbox {
+    display: none;
+}
+
+/* Задаем внешний вид для нашего кастомного чекбокса.*/
+.checkbox-custom {
+    position: relative;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #51341F;
+    border-radius: 3px;
+	  background-color: #EFD29F;
+}
+/* Кастомный чекбокс и лейбл центрируем по вертикали.*/
+.checkbox-custom,
+.label {
+    display: inline-block;
+    vertical-align: middle;
+    font-family: 'PT Sans', sans-serif;
+		font-weight:bold;
+		color:#2F1B15;
+    font-size: 20px;
+}
+
+/* Если реальный чекбокс отмечен,добавляем данный признак и к нашему кастомному чекбоксу  */
+.checkbox:checked + .checkbox-custom::before {
+    content: "\2713";
+    display: block;          /* Делаем его блочным элементом */
+    position: absolute;      /* Позиционируем его абсолютно */
+    top: -15px;
+		font-size: 25px;
+   	color:#275389;
+}
+			}
+			// Шкала владения JS
+			.myJs{
+				display: flex;
+				flex-direction: column;
+				flex-wrap: wrap;
+				margin:auto;
+				width:  770px;
+				margin-top: 10px;
+
+			.myJsItem{
+				position: relative;
+
+
+				&__title{
+					font-family: 'PT Sans', sans-serif;
+				font-weight: bold;
+				color:#2F1B15;
+				font-size:23px;
+				transition: all .1s;
+
+				}
+				&__scroll{
+					-webkit-appearance: none;
+					 width: 100%;
+					 height: 2px;
+					 border-bottom: 1px solid #5B3B26;
+					 &::after{
+						content:'';
+						display:block;
+						height:15px;
+						background-color: #5B3B26;
+						width: 2px;
+						position: absolute;
+						top: 43px;right: 0;
+					 }
+					 &::before{
+
+						 content:'';
+						 display:block;
+						 height:15px;
+						 background-color: #5B3B26;
+						 width: 2px;
+						 position: absolute;
+						 top: 43px;left:0px;
+						}
+					 }
+
+				&__scroll::-webkit-slider-thumb{
+					-webkit-appearance: none;
+					width: 0;
+					border-top:10px solid #5B3B26;
+					border-left: 5px solid transparent;
+					border-right: 5px solid transparent;
+					cursor: pointer;
+					position: relative;
+					top:-3px;right: 3px;
+
+				}
+				&__subtitle{
+					color:#2F1B15;
+					font-size: 15px;
+					display: block;
+					font-size: 11px;
+					font-weight: bold;
+					display: flex;
+					justify-content: space-between;
+
+					margin-top:15px;
+					span{
+						width: calc(770px / 4.1);
+						&:last-child{
+							text-align: right;
+						}
+}
+}
+}
+}
+// О себе словами
+.story{
+	width:  770px;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	margin-top: 20px;
+
+	&__title{
+		font-family: 'PT Sans', sans-serif;
+		font-weight:bold;
+		color:#2F1B15;
+		font-size:23px;
+	}
+	&__subtitle{
+		text-align: justify;
+		font-family: 'PT Sans', sans-serif;
+		color:#2F1B15;
+		font-size:15px;
+		}
+		&__area{
+			margin-top: 10px;
+		border: none; /* Параметры рамки */
+    width:  770px; /* Ширина */
+    min-width: 320px;
+    max-width: 960px;
+    height: 300px;
+    box-sizing: border-box; /* Алгоритм расчёта ширины */
+    font-size: 30px; /* Размер шрифта */
+	  resize: none;
+	  text-decoration: underline;
+    overflow: hidden;
+		background: url(../img/bg.jpg) no-repeat;
+	  font-family: Courier New;
+	  word-wrap: break-word;
+		}
+}
+// Планы на будущее
+		.myFuture{
+		width:  770px;
+		margin: auto;
+		.myFutureItem{
+		dispaly:flex;
+		// flex-direction: column;
+		flex-wrap:wrap;
+		&__title{
+		font-family: 'PT Sans', sans-serif;
+		font-weight:bold;
+	  color:#2F1B15;
+	  font-size:24px;
+
+				}
+				&__subtitle{
+		font-family: 'PT Sans', sans-serif;
+		font-size: 15px;
+		color:#4A4832;
+		margin-bottom:10px;
+
+				}
+				&__about{
+		display: flex;
+		margin-bottom: 50px;
+}
+				&__plan{
+		width:  770px;
+		display: flex;
+		justify-content: flex-start;
+		flex-wrap: wrap;
+}
+				&__radio{
+		display: none;
+}
+				.radio-custom{
+
+			width: 26px;
+			height: 26px;
+			background: url(../img/empty-radio.png) no-repeat;
+				}
+				.radio-custom,.radio-label{
+					display: inline-block;
+					vertical-align: middle;
+}
+				&__radio:checked + .radio-custom::before {
+    content: "";
+    display: block;
+    position: relative;
+  	top:24%; left:24%;
+    width: 13px;
+    height: 13px;
+		background:url(../img/radio.png);
+		top:26%;
+		left: 32%;
+}
+}
+}
+// Дата заполнения
+			.date{
+				width:  770px;
+				margin: auto;
+				display: flex;
+				flex-flow: column;
+		}
+		.dateItem{
+				display: flex;
+				&__descript{
+					font-family: 'PT Sans', sans-serif;
+				  font-weight:bold;
+				  color:#2F1B15;
+				  font-size:20px;
+				}
+			&__date{
+			display: inline-block;
+			border:none;
+			background: url(../img/bg.jpg);
+			font-family: 'Courier New';
+			font-size: 25px;
+			font-weight: 400;
+			color:#2F1B15;
+			border-bottom:2px solid #2F1B15;
+
+			position: relative;
+			bottom:20px;
+			left:50px;
+			margin-bottom: 50px;
+
+}
+}
+}
+}
+
+
+@media screen and (max-width:480px){
+
+.wrapper{
+	width: 100%;
+	margin:auto;
+	overflow: hidden;
+
+.aboutMe_item__title{
+	width: 100%;
+	font-family: 'PT Sans', sans-serif;
+	font-weight: bold;
+	font-size: 15px;
+	margin: auto;
+	margin-bottom: 16px;
+	text-align: center;
+	text-transform: uppercase;
+	color:#2F1B15;
+
+}
+.aboutMe_item__subtitle{
+
+	width: 100%;
+	border-bottom: 1px solid;
+	font-family: 'Courier new';
+	text-align: center;
+	font-size: 18px;
+	font-weight: 400;
+	position: relative;
+
+}
+.aboutMe_checkbox{
+	width: 90%;
+	display:flex;
+	color:red;
+	margin-top:30px;
+	margin-bottom: 30px;
+
+}
+.aboutMe_checkbox .checkboxItem__form{
+	display: block;
+}
+.myJs{
+	width: 100%;
+	text-align: center;
+	margin-bottom: 30px;
+}
+.story{
+	width: 94%;
+}
+.story__area{
+	width: 94%;
+	height: 200px;
+	font-size:16px;
+	margin-bottom:30px;
+}
+.myFuture{
+width: 94%;
+margin-bottom: 30px;
+font-size: 15px;
+display: block;
+
+}
+.myFutureItem__about{
+	display: flex;
+	flex-flow:column;
+	width: 90%;
+}
+.date{
+	width: 90%;
+	display: flex;
+	flex-flow:column;
+}
+.dateItem{
+	display: flex;
+	flex-flow: column;
+	text-align: center;
+}
+.dateItem__date{
+	position: relative;
+	top:10px;
+  text-align: center;
+	border-bottom: none;
+	width: 80%;
+}
+}
+}

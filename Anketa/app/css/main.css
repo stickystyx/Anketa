@@ -1,0 +1,627 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700');
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+body {
+  background: #797979;
+}
+.wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  width: 1000px;
+  margin: auto;
+  background: url(../img/bg.jpg);
+}
+.wrapper__inner {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+.wrapper__inner .header {
+  width: 100%;
+  margin: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.wrapper__inner .header_logo {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  /*Элементы контейнера флексовые*/
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  /*Расположение элементов по горизонтали колонкой*/
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-right: 52px;
+  /*Отступ справа*/
+  margin: 64px 88px -83px 0;
+  /* Отступы для позиционирования логотипа*/
+  height: 83px;
+  /*Высота лого*/
+  width: 247px;
+  /*Ширина лого*/
+  text-align: center;
+  /* Выравнивание текста внутри лого по-середине*/
+  padding: 15px 25px 18px 20px;
+  /*Внутренние отступы*/
+  border: 1px solid blue;
+  /*Рамка*/
+  -webkit-transform: rotate(-3deg);
+      -ms-transform: rotate(-3deg);
+          transform: rotate(-3deg);
+  /*Разворот логотипа */
+}
+.wrapper__inner .header_logo_title {
+  text-transform: uppercase;
+  /*Заглавные буквы*/
+  font-weight: bold;
+  /*Шрифт - жирный*/
+  font-size: 37px;
+  /*размер шрифта*/
+  color: #52608d;
+  /*Цвет шрифта*/
+  margin: -5px 1px;
+  /*Вненешние отступы*/
+  padding: 2px;
+  /*Внутренние отступы*/
+  font-family: 'Arial', sans-serif;
+  /*Ввыбранный Шрифт*/
+}
+.wrapper__inner .header_logo_subtitle {
+  color: #52608d;
+  /*Цвет шрифта*/
+  text-transform: uppercase;
+  /*Заглавные буквы*/
+  font-size: 10px;
+  /*размер шрифта*/
+  font-family: 'arial', sans-serif;
+  /*Шрифт*/
+  margin: 6px 0 0 2px;
+  /*Вненешние отступы*/
+  font-weight: bold;
+  /*Шрифт - жирный*/
+  letter-spacing: 1px;
+  /*расстояние между буквами*/
+}
+.wrapper__inner .header_main {
+  margin: auto;
+}
+.wrapper__inner .header_main__title {
+  color: #291C0D;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 120px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 64px;
+  text-shadow: -1px 9px 3px #2F1B15;
+}
+.wrapper__inner .aboutMe {
+  width: 77%;
+  margin: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.wrapper__inner .aboutMe_item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: wrap;
+      -ms-flex-flow: wrap;
+          flex-flow: wrap;
+}
+.wrapper__inner .aboutMe_item__title {
+  width: 30%;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: bold;
+  color: #2F1B15;
+  font-size: 23px;
+}
+.wrapper__inner .aboutMe_item__subtitle {
+  width: 70%;
+  border-bottom: 1px solid;
+  font-family: 'Courier new';
+  font-size: 30px;
+  font-weight: 400;
+  position: relative;
+  top: -10px;
+  margin-bottom: 26px;
+}
+.wrapper__inner .aboutMe_checkbox {
+  width: 77%;
+  margin: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  /*Стилизую чекбокс. Из кастомного в тот что на макете*/
+  /* Скрываем реальный чекбокс */
+  /* Задаем внешний вид для нашего кастомного чекбокса.*/
+  /* Кастомный чекбокс и лейбл центрируем по вертикали.*/
+  /* Если реальный чекбокс отмечен,добавляем данный признак и к нашему кастомному чекбоксу  */
+}
+.wrapper__inner .aboutMe_checkbox .checkboxItem {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
+}
+.wrapper__inner .aboutMe_checkbox .checkboxItem__title {
+  font-family: 'PT Sans', sans-serif;
+  font-weight: bold;
+  color: #2F1B15;
+  font-size: 23px;
+  margin-bottom: -4px;
+}
+.wrapper__inner .aboutMe_checkbox .checkboxItem__subtitle {
+  font-family: 'PT Sans', sans-serif;
+  color: #2F1B15;
+  font-size: 15px;
+  margin-bottom: 35px;
+}
+.wrapper__inner .aboutMe_checkbox .checkboxItem__form {
+  -webkit-align-content: space-between;
+      -ms-flex-line-pack: justify;
+          align-content: space-between;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: column wrap;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 -webkit-calc(296.15384615px);
+      -ms-flex: 0 1 calc(296.15384615px);
+          flex: 0 1 calc(296.15384615px);
+}
+.wrapper__inner .aboutMe_checkbox .checkbox {
+  display: none;
+}
+.wrapper__inner .aboutMe_checkbox .checkbox-custom {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #51341F;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  background-color: #EFD29F;
+}
+.wrapper__inner .aboutMe_checkbox .checkbox-custom,
+.wrapper__inner .aboutMe_checkbox .label {
+  display: inline-block;
+  vertical-align: middle;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: bold;
+  color: #2F1B15;
+  font-size: 20px;
+}
+.wrapper__inner .aboutMe_checkbox .checkbox:checked + .checkbox-custom::before {
+  content: "\2713";
+  display: block;
+  /* Делаем его блочным элементом */
+  position: absolute;
+  /* Позиционируем его абсолютно */
+  top: -15px;
+  font-size: 25px;
+  color: #275389;
+}
+.wrapper__inner .myJs {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin: auto;
+  width: 770px;
+  margin-top: 10px;
+}
+.wrapper__inner .myJs .myJsItem {
+  position: relative;
+}
+.wrapper__inner .myJs .myJsItem__title {
+  font-family: 'PT Sans', sans-serif;
+  font-weight: bold;
+  color: #2F1B15;
+  font-size: 23px;
+  -webkit-transition: all .1s;
+  -o-transition: all .1s;
+  transition: all .1s;
+}
+.wrapper__inner .myJs .myJsItem__scroll {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 2px;
+  border-bottom: 1px solid #5B3B26;
+}
+.wrapper__inner .myJs .myJsItem__scroll::after {
+  content: '';
+  display: block;
+  height: 15px;
+  background-color: #5B3B26;
+  width: 2px;
+  position: absolute;
+  top: 43px;
+  right: 0;
+}
+.wrapper__inner .myJs .myJsItem__scroll::before {
+  content: '';
+  display: block;
+  height: 15px;
+  background-color: #5B3B26;
+  width: 2px;
+  position: absolute;
+  top: 43px;
+  left: 0px;
+}
+.wrapper__inner .myJs .myJsItem__scroll::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 0;
+  border-top: 10px solid #5B3B26;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  cursor: pointer;
+  position: relative;
+  top: -3px;
+  right: 3px;
+}
+.wrapper__inner .myJs .myJsItem__subtitle {
+  color: #2F1B15;
+  font-size: 15px;
+  display: block;
+  font-size: 11px;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 15px;
+}
+.wrapper__inner .myJs .myJsItem__subtitle span {
+  width: -webkit-calc(187.80487805px);
+  width: calc(187.80487805px);
+}
+.wrapper__inner .myJs .myJsItem__subtitle span:last-child {
+  text-align: right;
+}
+.wrapper__inner .story {
+  width: 770px;
+  margin: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin-top: 20px;
+}
+.wrapper__inner .story__title {
+  font-family: 'PT Sans', sans-serif;
+  font-weight: bold;
+  color: #2F1B15;
+  font-size: 23px;
+}
+.wrapper__inner .story__subtitle {
+  text-align: justify;
+  font-family: 'PT Sans', sans-serif;
+  color: #2F1B15;
+  font-size: 15px;
+}
+.wrapper__inner .story__area {
+  margin-top: 10px;
+  border: none;
+  /* Параметры рамки */
+  width: 770px;
+  /* Ширина */
+  min-width: 320px;
+  max-width: 960px;
+  height: 300px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* Алгоритм расчёта ширины */
+  font-size: 30px;
+  /* Размер шрифта */
+  resize: none;
+  text-decoration: underline;
+  overflow: hidden;
+  background: url(../img/bg.jpg) no-repeat;
+  font-family: Courier New;
+  word-wrap: break-word;
+}
+.wrapper__inner .myFuture {
+  width: 770px;
+  margin: auto;
+}
+.wrapper__inner .myFuture .myFutureItem {
+  dispaly: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+.wrapper__inner .myFuture .myFutureItem__title {
+  font-family: 'PT Sans', sans-serif;
+  font-weight: bold;
+  color: #2F1B15;
+  font-size: 24px;
+}
+.wrapper__inner .myFuture .myFutureItem__subtitle {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 15px;
+  color: #4A4832;
+  margin-bottom: 10px;
+}
+.wrapper__inner .myFuture .myFutureItem__about {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 50px;
+}
+.wrapper__inner .myFuture .myFutureItem__plan {
+  width: 770px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+.wrapper__inner .myFuture .myFutureItem__radio {
+  display: none;
+}
+.wrapper__inner .myFuture .myFutureItem .radio-custom {
+  width: 26px;
+  height: 26px;
+  background: url(../img/empty-radio.png) no-repeat;
+}
+.wrapper__inner .myFuture .myFutureItem .radio-custom,
+.wrapper__inner .myFuture .myFutureItem .radio-label {
+  display: inline-block;
+  vertical-align: middle;
+}
+.wrapper__inner .myFuture .myFutureItem__radio:checked + .radio-custom::before {
+  content: "";
+  display: block;
+  position: relative;
+  top: 24%;
+  left: 24%;
+  width: 13px;
+  height: 13px;
+  background: url(../img/radio.png);
+  top: 26%;
+  left: 32%;
+}
+.wrapper__inner .date {
+  width: 770px;
+  margin: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: column;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+.wrapper__inner .dateItem {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.wrapper__inner .dateItem__descript {
+  font-family: 'PT Sans', sans-serif;
+  font-weight: bold;
+  color: #2F1B15;
+  font-size: 20px;
+}
+.wrapper__inner .dateItem__date {
+  display: inline-block;
+  border: none;
+  background: url(../img/bg.jpg);
+  font-family: 'Courier New';
+  font-size: 25px;
+  font-weight: 400;
+  color: #2F1B15;
+  border-bottom: 2px solid #2F1B15;
+  position: relative;
+  bottom: 20px;
+  left: 50px;
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 480px) {
+  .wrapper {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+  }
+  .wrapper .aboutMe_item__title {
+    width: 100%;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    margin: auto;
+    margin-bottom: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #2F1B15;
+  }
+  .wrapper .aboutMe_item__subtitle {
+    width: 100%;
+    border-bottom: 1px solid;
+    font-family: 'Courier new';
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    position: relative;
+  }
+  .wrapper .aboutMe_checkbox {
+    width: 90%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    color: red;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .wrapper .aboutMe_checkbox .checkboxItem__form {
+    display: block;
+  }
+  .wrapper .myJs {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .wrapper .story {
+    width: 94%;
+  }
+  .wrapper .story__area {
+    width: 94%;
+    height: 200px;
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+  .wrapper .myFuture {
+    width: 94%;
+    margin-bottom: 30px;
+    font-size: 15px;
+    display: block;
+  }
+  .wrapper .myFutureItem__about {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: column;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    width: 90%;
+  }
+  .wrapper .date {
+    width: 90%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: column;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  .wrapper .dateItem {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: column;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    text-align: center;
+  }
+  .wrapper .dateItem__date {
+    position: relative;
+    top: 10px;
+    text-align: center;
+    border-bottom: none;
+    width: 80%;
+  }
+}
